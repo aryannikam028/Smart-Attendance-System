@@ -1,0 +1,50 @@
+[
+  {
+    "id": "AUD-MV83SR13",
+    "timestamp": "2026-10-14T12:46:12.183Z",
+    "adminId": "Administrator",
+    "action": "APPROVE_LEAVE",
+    "targetPrn": "24067571372524",
+    "targetStudentName": "KALE OM BHAGWAN",
+    "date": "2026-10-15",
+    "previousStatus": "Pending",
+    "newStatus": "Approved",
+    "reason": "Approved by Administrator"
+  },
+  {
+    "id": "AUD-MV83KP0Y",
+    "timestamp": "2026-10-14T12:39:56.338Z",
+    "adminId": "Administrator",
+    "action": "APPROVE_LEAVE",
+    "targetPrn": "24067571372533",
+    "targetStudentName": "NIKAM ARYAN DHANANJAY",
+    "date": "2026-10-16",
+    "previousStatus": "Pending",
+    "newStatus": "Approved",
+    "reason": "Granted on medical grounds"
+  },
+  {
+    "id": "AUD-MV7W8SF0",
+    "timestamp": "2026-10-14T09:14:43.549Z",
+    "adminId": "Administrator",
+    "action": "REJECT_LEAVE",
+    "targetPrn": "24067571372522",
+    "targetStudentName": "BAGAL RANJIT BHARAT",
+    "date": "2026-10-16",
+    "previousStatus": "Pending",
+    "newStatus": "Rejected",
+    "reason": "contact me"
+  },
+  {
+    "id": "AUD-MV7VPLV0",
+    "timestamp": "2026-10-14T08:59:48.588Z",
+    "adminId": "Administrator",
+    "action": "APPROVE_LEAVE",
+    "targetPrn": "24067571372533",
+    "targetStudentName": "NIKAM ARYAN DHANANJAY",
+    "date": "2026-10-15",
+    "previousStatus": "Pending",
+    "newStatus": "Approved",
+    "reason": "Approved by Administrator"
+  }
+]
