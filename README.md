@@ -75,27 +75,7 @@ cd "d:\V10 2.O attendense"
 npm install
 ```
 
-### 3. Environment Configuration
-Create a `.env.local` file in the project root (a template is provided in `.env.example`):
-```env
-# Google Apps Script Web App Deployment URL
-APPS_SCRIPT_URL=https://script.google.com/macros/s/AKfycbxxtCSDo9Mj9ci1oNbtsj37_LYz-olr2HUpXQiu7x4g1J5nmmWYm47rQxIhuzukfGUHBQ/exec
-
-# Shared Secret Key between Next.js server and Google Apps Script
-APPS_SCRIPT_SHARED_SECRET=SMART_ATTENDANCE_SECRET_KEY_2026
-
-# High-entropy JWT Signing Secret (minimum 32 characters)
-JWT_SECRET=c21hcnQtYXR0ZW5kYW5jZS1zZWNyZXQta2V5LTIwMjYtMjAyNy15c3Bt
-
-# Administrator Credentials
-ADMIN_USERNAME=admin
-ADMIN_PASSWORD=admin123
-```
-
-> [!NOTE]
-> `.env.local` is git-ignored to prevent credential leaks. Never commit live secrets to version control.
-
-### 4. Running the Application
+### 3. Running the Application
 To run in production mode (recommended):
 ```bash
 npm run build
@@ -132,18 +112,6 @@ node scratch/run_audit.js
 
 ---
 
-## Default Access Credentials
-
-| Portal | Role | Username / PRN | Password | Description |
-| :--- | :--- | :--- | :--- | :--- |
-| **Student** | Student | `23067571372008` | `pass25` | Abhijeet Mahadev Shinde (Roll 25) |
-| **Admin** | Administrator | `admin` | `admin123` | Class Teacher / HOD Portal |
-
-> [!TIP]
-> Student passwords in the master register follow the pattern `pass<roll>` (e.g. `pass26` for Roll 26). Students can change their passwords via the Student Dashboard once logged in.
-
----
-
 ## Google Apps Script v9.2 Deployment (Additive)
 
 A hardened, 100% additive Google Apps Script has been prepared at:
@@ -157,7 +125,7 @@ This script enhances the live Google Sheet with atomic leave approvals, audit lo
 3. Replace the contents of `Code.gs` with the updated code from [google-apps-script/Code.gs](file:///d:/V10%202.O%20attendense/google-apps-script/Code.gs).
 4. Click **Project Settings** (gear icon) → **Script Properties** → Add:
    - **Property**: `SHARED_SECRET`
-   - **Value**: `SMART_ATTENDANCE_SECRET_KEY_2026`
+   - **Value**: `<your-shared-secret>`
 5. Click **Deploy** → **Manage deployments** → Click the edit icon (pencil) → Change version to **New version** → Click **Deploy**.
 
 ---
